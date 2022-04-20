@@ -33,7 +33,7 @@ void insertion_sort_list(listint_t **list)
  * swapNode - swaps two close nodes based on comparison
  * @list: the list of nodes
  * @node1: first node
- * @node2: second node 
+ * @node2: second node
  * Return: void
  */
 void swapNode(listint_t **list, listint_t *node1, listint_t *node2)
