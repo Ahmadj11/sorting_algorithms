@@ -1,21 +1,31 @@
 #include "sort.h"
-
-/**
- * print_array - print array
- * @array: array
- * @size: size of array
- */
-void print_array(const int *array, size_t size)
+/*
+*/void print_array(const int *array, size_t size)
 {
-	size_t x;
+size_t i;
+i = 0;
+while (array && i < size)
+{
+if (i > 0)
+printf(", ");
+printf("%d", array[i]);
+++i;
+}
+printf("\n");
+}
 
-	x = 0;
-		while (array && x < size)
-		{
-			if (x > 0)
-				printf(", ");
-			printf("%d", array[x]);
-			++x;
-		}
-		printf("\n");
+/*
+*/void print_list(const listint_t *list)
+{
+int i;
+i = 0;
+while (list)
+{
+if (i > 0)
+printf(", ");
+printf("%d", list->n);
+++i;
+list = list->next;
+}
+printf("\n");
 }
