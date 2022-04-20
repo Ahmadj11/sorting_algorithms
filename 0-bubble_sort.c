@@ -1,15 +1,20 @@
 #include "sort.h"
-/*
- * void bubble_sort - func
- * Return: 0
+
+/**
+ * bubble_sort - sort function
+ * @size: size
+ * @array: array
  */
 
 void bubble_sort(int *array, size_t size)
 {
 	size_t x, y, temp;
+
 	x = y = temp = 0;
+
+
 	if (size < 2)
-		return (void);
+	return;
 	for (x = 0; x < size; x++)
 	{
 	for (y = 1; y < (size - x); y++)
