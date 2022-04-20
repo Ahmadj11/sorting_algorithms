@@ -2,7 +2,8 @@
 #define SORT_H_
 /*structs8*/
 /*
-*/typedef struct listint_s
+*/
+typedef struct listint_s
 {
 const int n;
 struct listint_s *prev;
