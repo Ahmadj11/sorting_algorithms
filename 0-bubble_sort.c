@@ -8,21 +8,21 @@
 
 void bubble_sort(int *array, size_t size)
 {
-	unsigned long int x, y, temp;
+	unsigned long int i, j, tmp;
 
 	if (size < 2 && !array)
 		return;
-	for (y = 0; y < size - 1; y++)
+	for (j = 0; j < size - 1; j++)
 	{
-		for (x = 0; x < size - 1; x++)
+		for (i = 0; i < size - 1; i++)
 		{
-			if (array[x] > array[x + 1])
+			if (array[i] > array[i + 1])
 			{
-				temp = array[x];
-				array[x] = array[x + 1];
-				array[x + 1] = temp;
-				print_array(array, size);
-						}
-						}
-						}
-						}
+				tmp = array[i];
+				array[i] = array[i + 1];
+			array[i + 1] = tmp;
+print_array(array, size);
+}
+}
+}
+}
