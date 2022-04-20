@@ -36,6 +36,7 @@ void insertion_sort_list(listint_t **list)
  * @node2: second node
  * Return: void
  */
+
 void swapNode(listint_t **list, listint_t *node1, listint_t *node2)
 {
 	if (node1->prev)

@@ -33,7 +33,7 @@ void selection_sort(int *array, size_t size)
 	continue;
 	}
 	if (array[min] > array[ci])
-	min = ci;
+min = ci;
 ci++;
 }
 }
